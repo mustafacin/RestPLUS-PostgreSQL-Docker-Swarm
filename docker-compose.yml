@@ -1,0 +1,28 @@
+version: '3.8'
+
+
+services:
+    web:
+        image: proje:latest
+        ports:
+          - "5001:5001"
+    
+
+
+    db:
+        image: postgres:latest
+        volumes:
+          - /var/lib/postgresql/data     
+        ports:
+          - "5432:5432"
+        environment: 
+            - "POSTGRES_HOST_AUTH_METHOD=trust"
+                        
+
+
+    websunucu:
+        image: nginx:latest
+        
+        ports:
+          - "80:80"
+   
