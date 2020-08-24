@@ -7,5 +7,6 @@ postgresql ve nginx olmalıdır.
 docker-compose.yml dosyasında web servisindeki image kısımı silinip "build: ./web" şeklinde yazmak yeterli olacakatır.<br>
 <h3>docker-compose build</h3> => imajını alır.<br>
 <h3>docker-compose up</h3>  => Uygulamayı çalıştırır. <br>
-
+<br>
+<br>
 Not: nginx sunucuna gerek duymuyorsanız docker-compose.yml dosyasındaki web_sunucu servisini kaldırmak yeterli olacaktır. PostgreSQL veritabanı ve RestPLUS Api uygulması entegre çalıştığı için ikiside bulunmması gerekmektedir.
