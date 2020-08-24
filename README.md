@@ -4,6 +4,8 @@ Docker Swarm üzerinde çalıştırabilmek için ilk olarak web dizinin imajı a
 postgresql ve nginx olmalıdır.
 <br>
 <h2> Docker Compose İle Çalıştırma</h2>
-docker-compose.yml dosyasında /web katergorisindeki image kısımı silinip build: ./web şeklinde yazmak yeterli olacakatır.<br>
+docker-compose.yml dosyasında web servisindeki image kısımı silinip "build: ./web" şeklinde yazmak yeterli olacakatır.<br>
 <h3>docker-compose build</h3> => imajını alır.<br>
 <h3>docker-compose up</h3>  => Uygulamayı çalıştırır. <br>
+
+Not: nginx sunucuna gerek duymuyorsanız docker-compose.yml dosyasındaki web_sunucu servisini kaldırmak yeterli olacaktır. PostgreSQL veritabanı ve RestPLUS Api uygulması entegre çalıştığı için ikiside bulunmması gerekmektedir.
